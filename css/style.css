@@ -375,6 +375,33 @@ img {
   text-align: left;
   color: #f4f4fd;
 }
+
+.social-list-icon {
+  fill: none;
+  stroke: #ffffff;
+}
+
+.social-list {
+  display: flex;
+  column-gap: 16px;
+}
+
+.social-list-link {
+  display: block;
+  line-height: 0;
+  flex-grow: 1;
+}
+
+.page-footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-footer-wrap {
+  display: flex;
+  column-gap: 120px;
+}
+
 /* ################## / FOOTER ####################### */
 
 /*   .title-footer-logo {
