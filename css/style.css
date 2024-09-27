@@ -173,6 +173,14 @@ img {
 .hero-section {
   background-color: #2e2f42;
   padding: 188px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/herosection/people-office.jpg");
+  background-size: cover;
 }
 
 .main-title {
@@ -216,6 +224,17 @@ img {
 
 .benefits-section {
   background-color: #ffffff;
+}
+
+.benefits-item-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4%;
+  margin-bottom: 24px;
 }
 
 .benefits-list {
@@ -300,6 +319,34 @@ img {
   text-align: center;
   color: #434455;
 }
+
+.social-media-list {
+  display: flex;
+  column-gap: 12px;
+}
+
+.social-media-list-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50px, -50 px);
+  fill: none;
+  stroke: #ffffff;
+}
+
+.social-media-item {
+  position: relative;
+}
+.social-media-link {
+  display: block;
+  line-height: 0;
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 /* ############## /OUR TEAM SECTION ################# */
 
 /* ############## OUR PORTFOLIO ##################### */
@@ -313,6 +360,8 @@ img {
 }
 
 .portfolio-list-item {
+  position: relative;
+  overflow: hidden;
   width: calc ((100% - 48px) / 3);
 }
 
@@ -352,6 +401,27 @@ img {
   border-top: none;
 }
 
+.marketing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 40px 32px 164px 32px;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-item:hover .marketing-overlay {
+  transform: translateY(0%);
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
 /* ############## /OUR PORTFOLIO ##################### */
 
 /* #################### FOOTER ####################### */
@@ -390,6 +460,10 @@ img {
   display: block;
   line-height: 0;
   flex-grow: 1;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .page-footer-container {
@@ -402,6 +476,11 @@ img {
   column-gap: 120px;
 }
 
+.footer-text {
+  text-align: justify;
+  margin-left: 120px;
+  color: #ffffff;
+}
 /* ################## / FOOTER ####################### */
 
 /*   .title-footer-logo {
