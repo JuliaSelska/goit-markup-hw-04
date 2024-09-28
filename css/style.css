@@ -342,6 +342,7 @@ img {
   position: relative;
   height: 40px;
   width: 40px;
+  margin-top: 8px;
 }
 .social-media-link {
   display: flex;
@@ -450,7 +451,7 @@ img {
 /* #################### FOOTER ####################### */
 .page-footer {
   background-color: #2e2f42;
-  padding: 100px 0px;
+  margin: 100px 0px 100px 0px;
 }
 
 .footer-logo {
@@ -499,6 +500,7 @@ img {
 
 .footer-logo-wrap {
   margin-right: 120px;
+  margin-top: 100px;
 }
 
 .page-footer-wrap {
