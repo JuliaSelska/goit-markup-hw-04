@@ -304,8 +304,6 @@ img {
 
 .ourteam-list-information {
   padding: 32px 0;
-  border: 1px solid black;
-  border-top: none;
 }
 
 .ourteam-list-fullname {
@@ -451,7 +449,6 @@ img {
 /* #################### FOOTER ####################### */
 .page-footer {
   background-color: #2e2f42;
-  margin: 100px 0px 100px 0px;
 }
 
 .footer-logo {
@@ -461,7 +458,6 @@ img {
 
 .footer-paragraf {
   max-width: 264px;
-  padding-bottom: 100px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -505,6 +501,7 @@ img {
 .page-footer-wrap {
   margin-right: 120px;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .footer-text {
